@@ -1,3 +1,39 @@
+#color{
+	/*background-color:red;*/
+	width: 700px;
+	height:50px;
+	padding:2px;
+	margin:0px auto;
+	margin-bottom:10px;
+	-webkit-animation: change 4s infinite; /* Chrome, Safari, Opera */
+    animation: change 4s infinite;
+}
+
+#color > div{
+	margin-top:10px;
+	text-align:center;
+	font-size: 18px;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes change {
+    0%   {background-color:red;color:white;}
+    25%  {background-color:yellow;color:black;}
+    50%  {background-color:blue;color:white;}
+    75%  {background-color:green;color:white;}
+    100% {background-color:red;color:white;}
+}
+
+/* Standard syntax */
+@keyframes change {
+    0%   {background-color:red;color:white;}
+    25%  {background-color:yellow;color:black;}
+    50%  {background-color:blue;color:white;}
+    75%  {background-color:green;color:white;}
+    100% {background-color:red;color:white;}
+}
+
 @font-face {
     font-family: indieflower;
     src: url('IF/IndieFlower.ttf');
@@ -161,64 +197,3 @@ div.image_container{
     margin-right:auto;
     max-width: 500px;
 }
-
-
-@-moz-keyframes moveIt{
-    0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  35% {
-    transform: rotateX(-40deg);
-    opacity: 1;
-  }
-  65% {
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(180deg);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes moveIt{
-    0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  35% {
-    transform: rotateX(-40deg);
-    opacity: 1;
-  }
-  65% {
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(180deg);
-    opacity: 0;
-  }
-}
-
-@keyframes moveIt { 
-	0% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-  35% {
-    transform: rotateX(-40deg);
-    opacity: 1;
-  }
-  65% {
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(180deg);
-    opacity: 0;
-  }
-}
-
-h3{
-    animation-duration: 3s;
-    animation-name:moveIt;	
-}
-
